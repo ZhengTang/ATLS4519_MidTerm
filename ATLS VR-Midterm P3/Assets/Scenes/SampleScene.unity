@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bf01e94a4da44276b741ddff9c33cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: 
+  objectName: bt_controller
 --- !u!65 &154848241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee7a9b4a9cd2469e914e394902e793d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  host: 
+  host: 192.168.1.100
 --- !u!4 &968925593
 Transform:
   m_ObjectHideFlags: 0

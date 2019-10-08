@@ -8,7 +8,7 @@ using QualisysRealTime.Unity;
 // This class automatically connects to the Qualisys server on startup
 public class QTMConnector : MonoBehaviour
 {
-    public string host = "192.168.1.100"; // The ipaddress of the host server, make sure you set this in the editor
+    public string host; // The ipaddress of the host server, make sure you set this in the editor
     private DiscoveryResponse server;
     private bool foundServer = false;
     private RTClient rtClient;
