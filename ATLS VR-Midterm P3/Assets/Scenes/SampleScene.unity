@@ -401,7 +401,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1484971958}
@@ -460,7 +460,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1484971958}
-  - component: {fileID: 1484971959}
   - component: {fileID: 1484971957}
   m_Layer: 0
   m_Name: CameraParent
@@ -483,7 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194225}
   cameraProxy: {fileID: 1996928687}
-  lerpSpeed: 0.02
+  lerpSpeed: 0.05
 --- !u!4 &1484971958
 Transform:
   m_ObjectHideFlags: 0
@@ -500,21 +499,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1484971959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484971956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acbd823ffc0bc476e8e5047edad5971b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  cameraProxy: {fileID: 0}
-  lerpSpeed: 0
 --- !u!1 &1586250098
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,7 +710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736676761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.5, y: 0, z: -0.1}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -761,7 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bf01e94a4da44276b741ddff9c33cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: ' bt_headset'
+  objectName: bt_headset
 --- !u!4 &1996928689
 Transform:
   m_ObjectHideFlags: 0
@@ -842,6 +826,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355510533967088737, guid: 48fe87f04f2fa4ec1a9dd9190c5b8e1a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355510533967088737, guid: 48fe87f04f2fa4ec1a9dd9190c5b8e1a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355510533388661637, guid: 48fe87f04f2fa4ec1a9dd9190c5b8e1a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48fe87f04f2fa4ec1a9dd9190c5b8e1a, type: 3}
