@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953561df51f444096a3a64a0d4b1dd72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strokePrefab: {fileID: 0}
+  strokePrefab: {fileID: 1586250098}
   minDistance: 0.01
 --- !u!1 &705507993
 GameObject:
