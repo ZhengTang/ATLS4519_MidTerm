@@ -24,7 +24,9 @@ public class PenStroke : MonoBehaviour
         {
             isDrawing = true;
             // Create new stroke
-            currentStroke = Instantiate(testPrefab, new Vector3(0, 0, 20), Quaternion.identity);
+            currentStroke = Instantiate(testPrefab);
+            currentStroke.transform.position = transform.position;
+            //currentStroke = Instantiate(testPrefab, new Vector3(0, 0, 20), Quaternion.identity);
         }
 
         if (Input.GetButtonUp("Fire1"))
@@ -34,32 +36,32 @@ public class PenStroke : MonoBehaviour
         }
 
         // While the pen is drawing
-        if (isDrawing)
-        {
-            // Get a reference to the line renderer
-            LineRenderer line = currentStroke.GetComponent<LineRenderer>();
+        //if (isDrawing)
+        //{
+        //    // Get a reference to the line renderer
+        //    LineRenderer line = currentStroke.GetComponent<LineRenderer>();
 
-            // Automatically add a point if there are no positions
-            if (line.positionCount == 0)
-            {
-                line.positionCount += 1;
-                line.SetPosition(line.positionCount - 1, transform.position);
-            }
-            else
-            {
-                // Get a reference to the last point added
-                Vector3 lastPosition = line.GetPosition(line.positionCount - 1);
-                // compute a vector that points from the last position to the current position
-                Vector3 distanceVec = transform.position - lastPosition;
+        //    // Automatically add a point if there are no positions
+        //    if (line.positionCount == 0)
+        //    {
+        //        line.positionCount += 1;
+        //        line.SetPosition(line.positionCount - 1, transform.position);
+        //    }
+        //    else
+        //    {
+        //        // Get a reference to the last point added
+        //        Vector3 lastPosition = line.GetPosition(line.positionCount - 1);
+        //        // compute a vector that points from the last position to the current position
+        //        Vector3 distanceVec = transform.position - lastPosition;
 
-                // Add a point if the current position is far enough away
-                if (distanceVec.sqrMagnitude > minDistance * minDistance)
-                {
-                    line.positionCount += 1;
-                    line.SetPosition(line.positionCount - 1, transform.position);
-                }
-            }
-        }
+        //        // Add a point if the current position is far enough away
+        //        if (distanceVec.sqrMagnitude > minDistance * minDistance)
+        //        {
+        //            line.positionCount += 1;
+        //            line.SetPosition(line.positionCount - 1, transform.position);
+        //        }
+        //    }
+        //}
 
     }
 }
