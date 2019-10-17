@@ -5,7 +5,7 @@ using UnityEngine;
 public class PenStroke : MonoBehaviour
 {
     private GameObject currentStroke; // Holds the current stroke being drawn
-    public GameObject strokePrefab; // Reference to the stroke prefab we created before
+    public GameObject testPrefab; // Reference to the stroke prefab we created before
     private bool isDrawing = false;
     public float minDistance = 0.01f; // Distance required to move the pen before a point will be added
 
@@ -24,7 +24,7 @@ public class PenStroke : MonoBehaviour
         {
             isDrawing = true;
             // Create new stroke
-            currentStroke = Instantiate(strokePrefab);
+            currentStroke = Instantiate(testPrefab, new Vector3(0, 0, 20), Quaternion.identity);
         }
 
         if (Input.GetButtonUp("Fire1"))
