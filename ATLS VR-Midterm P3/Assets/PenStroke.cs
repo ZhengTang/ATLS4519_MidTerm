@@ -9,6 +9,8 @@ public class PenStroke : MonoBehaviour
     private bool isDrawing = false;
     public float minDistance = 0.01f; // Distance required to move the pen before a point will be added
 
+    public AudioSource test;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +24,15 @@ public class PenStroke : MonoBehaviour
         // Check if button is down
         if (Input.GetButtonDown("Fire1"))
         {
+            
+
+            Debug.Log("create");
             isDrawing = true;
             // Create new stroke
             currentStroke = Instantiate(testPrefab);
             currentStroke.transform.position = transform.position;
             //currentStroke = Instantiate(testPrefab, new Vector3(0, 0, 20), Quaternion.identity);
+            test.Play();
         }
 
         if (Input.GetButtonUp("Fire1"))
