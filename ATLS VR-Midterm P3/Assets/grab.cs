@@ -37,8 +37,8 @@ public class grab : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        //Debug.Log(other.name);
-        if (Input.GetButtonDown("Fire2"))
+        Debug.Log(other.name);
+        if (Input.GetButton("Fire2"))
         {
             Debug.Log("holding");
             other.GetComponent<Rigidbody>().useGravity = false;
@@ -54,6 +54,11 @@ public class grab : MonoBehaviour
             other.GetComponent<Rigidbody>().useGravity = true;
             other.GetComponent<Rigidbody>().isKinematic = false;
             other.transform.parent = null;
+        }
+
+        if (Input.GetButtonDown("Fire3"))
+        {
+            Destroy(other);
         }
     }
 }

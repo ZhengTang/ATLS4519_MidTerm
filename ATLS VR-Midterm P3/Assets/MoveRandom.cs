@@ -35,7 +35,7 @@ public class MoveRandom : MonoBehaviour
         yield return new WaitForSeconds(timer);
         getNewPath();
         validPath = NavMeshAgent.CalculatePath(target, path);
-        if (!NavMeshAgent.CalculatePath(target, path)) Debug.Log("Found an invalid path");
+        //if (!NavMeshAgent.CalculatePath(target, path)) Debug.Log("Found an invalid path");
 
         while (!validPath)
         {

@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drop: {fileID: 697487471959430905, guid: bd7d53188c85a4aa691689502915af47, type: 3}
-  walk: {fileID: 2837505213437114161, guid: e47119a80f4b04354ae4b59d52a94675, type: 3}
+  walk: {fileID: 1571647436086860058, guid: eb81df63943a640a4973f82687e5a48c, type: 3}
 --- !u!1 &5336493043453388677
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class sounds : MonoBehaviour
 
     void OnTriggerEnter()
     {
+        Debug.Log("drop!!");
         drop.Play();
     }
 
