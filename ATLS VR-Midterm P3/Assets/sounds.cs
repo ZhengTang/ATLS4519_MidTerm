@@ -7,15 +7,19 @@ public class sounds : MonoBehaviour
 
 	public AudioSource drop;
     public AudioSource walk;
+    public AudioSource pokpok;
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collision other)
     {
-        Debug.Log("drop!!");
-        drop.Play();
+        if (other.gameObject.name == "Planeb")
+        {
+            //Debug.Log("drop!!");
+            drop.Play();
+        }
     }
 
     private void Start()
     {
-        walk.PlayDelayed(2);
+        pokpok.PlayDelayed(3);
     }
 }

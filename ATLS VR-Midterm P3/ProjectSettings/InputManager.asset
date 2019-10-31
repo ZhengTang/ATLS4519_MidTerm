@@ -43,8 +43,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 1
-    altNegativeButton: \
-    altPositiveButton: /
+    altNegativeButton: v
+    altPositiveButton: l
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -59,8 +59,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: .
-    altNegativeButton: 
-    altPositiveButton: 2
+    altNegativeButton: f
+    altPositiveButton: u
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -75,8 +75,8 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: ','
-    altNegativeButton: 
-    altPositiveButton: 3
+    altNegativeButton: t
+    altPositiveButton: y
     gravity: 1000
     dead: 0.001
     sensitivity: 1000
@@ -153,8 +153,8 @@ InputManager:
     m_Name: Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: s
+    positiveButton: w
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0
@@ -169,8 +169,8 @@ InputManager:
     m_Name: Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: a
+    positiveButton: d
     altNegativeButton: 
     altPositiveButton: 
     gravity: 0

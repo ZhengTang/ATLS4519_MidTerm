@@ -25,7 +25,7 @@ public class MoveRandom : MonoBehaviour
         float y = Random.Range(0, 20);
         float z = Random.Range(-40, 40);
 
-        Vector3 pos = new Vector3(x*10, y, z*10);
+        Vector3 pos = new Vector3(x*50, y, z*50);
         return pos;
     }
 

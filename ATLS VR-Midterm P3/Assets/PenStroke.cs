@@ -35,11 +35,11 @@ public class PenStroke : MonoBehaviour
             test.Play();
         }
 
-        if (Input.GetButtonUp("Fire1"))
-        {
-            isDrawing = false;
+        //if (Input.GetButtonUp("Fire1"))
+        //{
+        //    isDrawing = false;
             
-        }
+        //}
 
         // While the pen is drawing
         //if (isDrawing)
