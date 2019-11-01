@@ -8,9 +8,9 @@ Farm Sandbox is a VR game that is designed for players to explore and chill with
 References and Resources used:
 
 Unity Store Assets:
-Free Low Poly Pack - Broken Vector
+Free Low Poly Pack - Broken Vector /
 Voxel Animals - Voxel Guy
 
 Sounds:
-freesound.org
+freesound.org /
 Farm Game Music by W.O.W Sound
